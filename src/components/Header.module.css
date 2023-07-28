@@ -1,0 +1,13 @@
+.header{
+    background:var(--gray-700);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 12.5rem;
+    position: relative;
+}
+
+.header img{
+    height: 2.5rem;
+}

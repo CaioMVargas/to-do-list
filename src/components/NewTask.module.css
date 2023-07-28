@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 10.5rem;
+    left: 28rem;
+}
+
+.form{
+    display: inline-block;
+    resize: none;
+    align-items: center
+}
+
+.form textarea{
+    resize: none;
+    width: 35rem;
+    height: 3.25rem;
+}
+
+.footer{
+    display: inline-block;
+    margin-left: 0.875rem;
+}
