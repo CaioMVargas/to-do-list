@@ -8,18 +8,44 @@
 }
 
 .form{
-    display: inline-block;
-    resize: none;
+    display: flex;
+    flex-direction: row;
     align-items: center
 }
 
 .form textarea{
+    width: 40rem;
+    background: var(--gray-500);
     resize: none;
-    width: 35rem;
-    height: 3.25rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius:8px ;
+    line-height: 1.4;
+    border: 1px solid var(--gray-700);
+    color: var(--gray-300);
 }
 
 .footer{
-    display: inline-block;
+    display: flex;
     margin-left: 0.875rem;
+    align-items: center;
+}
+
+.footer button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 0;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+.footer button:hover{
+    background: var(--blue);
 }

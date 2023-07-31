@@ -1,4 +1,6 @@
+import {PlusCircle} from "phosphor-react";
 import styles from "./NewTask.module.css";
+
 
 export function NewTask() {
   return (
@@ -10,7 +12,7 @@ export function NewTask() {
           required
         />
         <footer className={styles.footer}>
-            <button type="submit" >Criar</button>
+            <button type="submit" >Criar <PlusCircle size={16}/></button>
         </footer>
       </form>
     </div>
