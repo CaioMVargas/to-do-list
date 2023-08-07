@@ -3,8 +3,8 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 10.5rem;
-    left: 28rem;
+    top: 23%;
+    left: 25%;
 }
 
 .form{
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 1rem 1.5rem;
+    padding: 1.3rem 1.5rem;
     border-radius: 8px;
     border: 0;
     background: var(--blue-dark);

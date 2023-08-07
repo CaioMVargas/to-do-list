@@ -4,6 +4,15 @@
     margin-top: 5rem;
 }
 
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 4rem 30%;
+}
+
 .countNumber{
     display: flex;
     align-items: center;
@@ -28,3 +37,98 @@
     font-size: 0.875rem;
     color: var(--purple);
 }
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.checkbox button{
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.checkbox button:hover{
+  color: var(--danger);
+}
+  
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+  
+input[type="checkbox"]:before {
+    content: "";
+    border-radius: 20px;
+    border: 2px solid var(--blue);
+    display: inline-block;
+    position: relative; 
+    width: 1rem;
+    height: 1rem;
+    margin-right: 8px; 
+    background-color: transparent;
+    transition: all 0.2s ease;
+  }
+input[type="checkbox"]:hover:before {
+    border-color: transparent;
+    opacity: 0.8; 
+  }
+
+input[type="checkbox"]:checked:before {
+    border-color: transparent; 
+  }
+
+input[type="checkbox"]:hover:after {
+    content: "\2713";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 20px;
+    background: var(--purple-dark);
+    position: absolute;
+    font-size: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    opacity: 0.5; 
+  }
+
+input[type="checkbox"]:checked:hover:after{
+  opacity: 1;
+}
+  
+input[type="checkbox"]:checked:after {
+    content: "\2713";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 20px;
+    background: var(--purple-dark);
+    position: absolute;
+    font-size: 1em;
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 0;
+  }
+
+
