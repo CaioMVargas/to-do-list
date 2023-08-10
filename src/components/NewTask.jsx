@@ -2,18 +2,37 @@ import {PlusCircle} from "phosphor-react";
 import styles from "./NewTask.module.css";
 import { Task } from "./Tasks";
 import { TaskCounter } from "./TaskCounter";
+import { useState } from "react";
 
 
-export function NewTask() {
+export function NewTask({content}) {
 
+  const [tasks, setTasks] = useState([
+    'Mensagem teste'
+  ]);
+
+  const [newTaskText, setNewTaskText] = useState('');
+
+  function handleCreateNewTask(){
+    event.preventDefault()
+
+    setTasks([...tasks, newTaskText]);
+    setNewTaskText('');
+  }
+
+  function handleNewTaskChange() {
+    setNewTaskText(event.target.value)
+  }
 
   return (
     <>
     <div className={styles.container}>
-      <form className={styles.form}>
+      <form onSubmit={handleCreateNewTask} className={styles.form}>
         <textarea
-          name="comment"
+          name="tasks"
           placeholder="Adicione uma nova tarefa"
+          value={newTaskText}
+          onChange={handleNewTaskChange}
           required
         />
         <footer className={styles.footer}>
@@ -23,7 +42,9 @@ export function NewTask() {
     </div>
     <div>
       <TaskCounter/>
-      <Task/>
+      {tasks.map(task => {
+        return <Task content={task}/>
+      })}
     </div>
     </>
   );
