@@ -1,7 +1,12 @@
 import styles from "./Task.module.css";
 import { Trash } from "phosphor-react";
 
-export function Task({content}) {
+export function Task({content, onDeleteTask}) {
+
+    function handleDeleteTask(){
+      onDeleteTask(content);
+    }
+
     return(
         <form className={styles.list}>
         <div className={styles.checkbox}>
@@ -10,7 +15,7 @@ export function Task({content}) {
             <label htmlFor="checkbox1"/>
               <p>{content}</p>
             <footer>
-              <button title="Deletar comentário" className={styles.trash}>
+              <button onClick={handleDeleteTask} title="Deletar comentário" className={styles.trash}>
                 <Trash size={24} />
               </button>
             </footer>

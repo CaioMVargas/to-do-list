@@ -24,6 +24,14 @@ export function NewTask({content}) {
     setNewTaskText(event.target.value)
   }
 
+  function deleteTask(taskToDelete){
+    const tasksWithoutDeletedOne = tasks.filter(task => {
+      return task !== taskToDelete;
+    })
+
+    setTasks(tasksWithoutDeletedOne);
+  }
+
   return (
     <>
     <div className={styles.container}>
