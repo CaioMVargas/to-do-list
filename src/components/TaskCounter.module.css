@@ -2,33 +2,30 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
-}
-
-.countNumber{
+  }
+  
+  .countNumber{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-}
-
-.container span{
+  }
+  
+  .container span{
     font-size: 0.875rem;
     color: var(--gray-200);
     border-radius: 0.6rem;
     background: var(--gray-400);
     padding: 1px 9px;
-}
-
-.tasksCreated{
+  }
+  
+  .tasksCreated{
     font-size: 0.875rem;
     color: var(--blue);
-}
-
-.completedTasks{
+  }
+  
+  .completedTasks{
     font-size: 0.875rem;
     color: var(--purple);
-}
-
-
-
-
+  }
+  

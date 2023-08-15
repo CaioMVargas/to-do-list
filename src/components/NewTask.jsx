@@ -1,8 +1,8 @@
 import {PlusCircle} from "phosphor-react";
 import styles from "./NewTask.module.css";
 import { Task } from "./Tasks";
-import { TaskCounter } from "./TaskCounter";
 import { useState } from "react";
+import { TaskCounter } from "./TaskCounter";
 
 
 export function NewTask({content}) {

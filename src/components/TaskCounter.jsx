@@ -1,7 +1,6 @@
+import styles from '../components/TaskCounter.module.css'
 
-import styles from "./TasksCounter.module.css";
-
-export function TaskCounter() {
+export function TaskCounter({taskCount}) {
 
   return (
     <>
@@ -12,7 +11,7 @@ export function TaskCounter() {
         </div>
         <div className={styles.countNumber}>
           <strong className={styles.completedTasks}>Concluidas</strong>
-          <span>0</span>
+          <span>{taskCount}</span>
         </div>
       </header>
     </>
