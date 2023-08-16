@@ -131,3 +131,19 @@ input[type="checkbox"]:checked:after {
   margin-left: auto;
   padding-left: 1rem;
 }
+
+.completedText{
+  text-decoration: line-through;
+  font-size: 14px;
+  color: var(--gray-300);
+}
+
+@media (max-width: 768px) {
+    .task{
+      width: 17rem;
+    }
+
+    .list{
+      padding-right: 5rem;
+    }
+  }
